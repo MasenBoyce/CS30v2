@@ -1,4 +1,4 @@
-
+package Bank;
 public class BusinessAcct extends Account 
 {
 	private double minBal = 500;

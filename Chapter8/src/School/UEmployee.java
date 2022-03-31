@@ -19,6 +19,6 @@ abstract class UEmployee
 	
 	public String toString() //returns employees name
 	{
-		return("Employee name: " + FN + " " + LN);
+		return("Employee name: " + FN + " " + LN + "\nSalary: $" + PayRate);
 	}
 }

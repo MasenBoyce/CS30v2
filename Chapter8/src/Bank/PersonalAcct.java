@@ -1,7 +1,7 @@
-
+package Bank;
 public class PersonalAcct extends Account 
 {
-	private double minBal = 100;
+	private double Bal;
 	
 	
 	
@@ -9,11 +9,14 @@ public class PersonalAcct extends Account
 	{
 		super(bal, fName, lName, str, city, st, zip);
 		
-		
-		if(bal < minBal) 
-		{
-			bal = bal - 2;
-		}
+		Bal = bal;
+	}
+	
+	
+	
+	public String toString() 
+	{
+		return("Balance: $" + Bal);
 	}
 }
 

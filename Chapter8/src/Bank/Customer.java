@@ -1,3 +1,4 @@
+package Bank;
 public class Customer {
 	private String firstName, lastName, street, city, state, zip;
 		

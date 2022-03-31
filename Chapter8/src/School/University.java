@@ -22,23 +22,27 @@ public class University
 		System.out.println("Branch: Faculty (F) | Staff (S) | Quit (Q)");
 		action = input.nextLine();
 		
-		System.out.println("First Name: ");
-		String FN = input.nextLine();
 		
-		System.out.println("Last Name: ");
-		String LN = input.nextLine();
-		
-		
-		
+	
 		if(action.equalsIgnoreCase("F") || action.equalsIgnoreCase("Faculty")) 
 		{
 			System.out.println("Department: ");
 			String D = input.nextLine();
 			
 			System.out.println("Hourly Pay Rate: ");
-			double HPR = input.nextDouble();
+			double PR = input.nextDouble();
 			
-			Faculty emp = new Faculty(FN,LN,D,HPR);
+			System.out.println("First Name: ");
+			String FN = input.nextLine();
+			
+			System.out.println("Last Name: ");
+			String LN = input.nextLine();
+			
+			
+			Faculty emp = new Faculty(FN, LN, D, PR);
+			
+			
+			System.out.println(emp.toString());
 		}
 		
 		
@@ -49,13 +53,26 @@ public class University
 			String JT = input.nextLine();
 			
 			System.out.println("Salary: ");
-			String S = input.nextLine();
+			double S = input.nextDouble();
+			
+			System.out.println("First Name: ");
+			String FN = input.nextLine();
+			
+			System.out.println("Last Name: ");
+			String LN = input.nextLine();
+			
+			
+			Staff emp = new Staff(FN, LN, JT, S);
+			
+			
+			System.out.println(emp.toString());
+			
 		}
 		}
 		
 		
 	
-		while(!action.equalsIgnoreCase("Q"));
+		while(action.equalsIgnoreCase("Q") || (action.equalsIgnoreCase("Quit")));
 	}
 }
 
