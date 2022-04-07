@@ -1,4 +1,4 @@
-package Vehicle;
+package CarDealership;
 
 abstract class Vehicle {
 	private int fuelEconomyCity, fuelEconomyHwy;
