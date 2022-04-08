@@ -61,8 +61,14 @@ public class CarDealership
 			
 			if(action.equalsIgnoreCase("Minivan") || action.equalsIgnoreCase("MV")) 
 			{
-				Minivan MV = new Minivan();
+				Minivan MV = new Minivan(19, 27, 8, 5);
+				
+				System.out.println(MV.toString());
 			}
 		}
+		
+		while(action.equalsIgnoreCase("Quit") || action.equalsIgnoreCase("Q"));
+		
 	}
 }
+

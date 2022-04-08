@@ -30,7 +30,7 @@ public class Truck extends Vehicle
 	
 	String cargoContainer() 
 	{
-		return("The trunk in this truck can hold " + super.getCargoVolume() + " cubic feet of cargo");
+		return("The trunk in this truck can hold " + super.getCargoVolume() + " bags of cargo");
 	}
 	
 	
