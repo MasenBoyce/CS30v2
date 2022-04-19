@@ -1,3 +1,15 @@
+/*
+  
+	Program: Hockey.java 				Last Date of this Revision: April 9, 2022 
+	Purpose: The hockey class tests the puck class by asking the user to enter the weights of two pucks then telling them what division the pucks are for, if the pucks are equal in weight or not, as well as which puck is heavier.
+	Author: Masen Boyce
+	School: CHHS
+	Course: Computer Science 30 
+	
+*/
+
+
+
 import java.util.Scanner;
 
 
@@ -91,3 +103,5 @@ The two pucks are not equal in weight.
 Puck 1 is heavier than Puck 2
 
 */
+
+
