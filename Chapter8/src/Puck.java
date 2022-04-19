@@ -1,5 +1,17 @@
 
-public class Puck extends Disk 
+/*
+ 
+ 	Program: Puck.java 				Last Date of this Revision: April 9, 2022 
+	Purpose: This class tests the weight of 
+	Author: Masen Boyce
+	School: CHHS
+	Course: Computer Science 30 
+	
+*/ 
+	
+	
+	
+public class Puck 
 {
 	private double weight; //initializes weight
 	private boolean standard, youth; //initializes standard and youth divisions
@@ -49,12 +61,12 @@ public class Puck extends Disk
 		}
 		
 		
-		return(div);
+		return(div); //returns result
 	}
 	
 	
 	
-	public String toString() 
+	public String toString() //prints the data of the puck
 	
 	{
 		String puck;
@@ -65,7 +77,7 @@ public class Puck extends Disk
 	
 	
 	
-	public boolean equals(Object p) 
+	public boolean equals(Object p) //determines what devision the puck is in
 	{
 		Puck disk = (Puck)p;
 		
@@ -82,7 +94,7 @@ public class Puck extends Disk
 	
 	
 	
-	public int compareTo(Object c) 
+	public int compareTo(Object c) //tests which puck is heavier or if they're equal in weight
 	{
 		Puck object = (Puck)c;
 		
@@ -102,3 +114,4 @@ public class Puck extends Disk
 		}
 	}
 }
+
